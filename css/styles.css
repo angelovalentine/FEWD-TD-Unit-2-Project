@@ -106,7 +106,7 @@ a {
 
 /* Layout -------------------- */
 
-.image-profile {
+.profile-image {
     display: block;
     margin: 0 auto;
     padding: .75em;
@@ -131,7 +131,7 @@ a {
     max-width: 100%
 }
 
-.main-footer {
+.footer {
     font-size: .95em;
     text-transform: uppercase;
     padding: .75em .25em;
@@ -172,6 +172,9 @@ a {
         text-align: center;
     }
 
+    .main-header {
+        padding: 2em .5em;
+    }
     .main-nav a {
         background-color: rgba(255, 255, 255, 0);
     }
@@ -181,17 +184,21 @@ a {
         padding: 10px;
     }
     
-    .image-profile {
+    .profile-image {
         float: right;
         width: 40%;
-        padding-right: 1em;
+        /* padding-right: 1em; */
         margin-bottom: 2em;
-        clear: both;
     }
 
+    #intro {
+        text-align: left;
+    }
+    
     .intro {
         /* display: inline-block; */
-        text-align: left;
+        /* text-align: left; */
+        max-width: 60%;
         padding: 0 0 5em 1em;
     }
 
@@ -222,9 +229,18 @@ a {
         text-align: center;
     }
 
-    .main-footer {
+    .footer {
         max-width: 90%;
     }
+    
+    .footer-nav li {
+        display: inline-block;
+        /* float: right; */
+        position: relative;
+        right: 0;
+        margin-right: 40px;
+        max-width: 100%;
+       }
 
 	/* Float clearfix -------------------- */
 
