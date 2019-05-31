@@ -69,13 +69,18 @@ p {
     font-size: .95em;
     line-height: 1.5;
     text-align: center;
-    padding: 1em 1.5em 1.5em;
-	margin: 0 auto;
+    padding: 1em 2em 1.5em;
+    margin: 0 auto;
+    max-width: 90%;
 }
 
 a {
 	text-decoration: none;
 }
+
+/* #intro {
+    max-width: 85%;
+} */
 
 /* Navigation -------------------- */
 
@@ -102,6 +107,10 @@ a {
 
 .main-nav a:hover {
 	color: #1373af;
+}
+
+.footer-nav {
+    display: none;
 }
 
 /* Layout -------------------- */
@@ -157,9 +166,6 @@ a {
         font-size: .85em;
     }
 
-    .name {
-        padding-top: 1.5em;
-    }
 	.container {
 		width: 100%;
 		margin: 0 auto;
@@ -204,19 +210,26 @@ a {
 
     .container {
         margin-top: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
     }
 
     .p1,
     .p2 {
-    max-width: 46.5%;
+        max-width: 49.5%;
     }
 
     .p1 {
-    float: left;
+        float: left;
     }
 
     .p2 {
-    float: right;
+        float: right;
+    }
+
+    .con {
+        margin: 0 auto;
+        width: 80%;
     }
 
     .contact {
@@ -224,22 +237,34 @@ a {
     }
 
     .con-text {
-        display: inline-block;
-        width: 70%;
-        text-align: center;
+        width: 100%;
+        padding: 0 3em 2.25em;
     }
 
     .footer {
         max-width: 90%;
+        margin: 0 auto;
+        font-size:.85em;
+    }
+
+    .footer-name {
+        display: inline-block;
+        float: left;
+        padding: 20px 15px;
+    }
+
+    .return {
+        display: none;
     }
     
-    .footer-nav li {
+    .footer-nav {
+        display: contents;
+    }
+    .footer-nav a {
         display: inline-block;
-        /* float: right; */
-        position: relative;
-        right: 0;
-        margin-right: 40px;
-        max-width: 100%;
+        float: right;
+        margin: 0 auto;
+        padding: 20px 15px;
        }
 
 	/* Float clearfix -------------------- */
@@ -253,14 +278,32 @@ a {
 }
 
 @media (min-width: 1024px) {
-	
+    
+    header {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+
+    .main-header {
+        /* padding: 0; */
+    }
+
+    .name {
+        position: relative;
+        top: 50%;
+        left: 0;
+    }
+
+    .main-nav {
+        position: relative;
+        top: 50%;
+        right: 0;
+    }
+
 	.container {
 		width: 80%;
 		max-width: 1150px;
-	}
-
-	.primary {
-		width: 40%;
 	}
 
     .p3,
