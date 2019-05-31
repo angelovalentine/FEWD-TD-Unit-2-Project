@@ -128,6 +128,7 @@ a {
     padding: 1em;
     background-color: #fff;
     border-radius: 0.2em;
+    max-width: 100%
 }
 
 .main-footer {
@@ -151,9 +152,6 @@ a {
 
 @media (min-width: 768px) {
 
-    #intro {
-        text-align: left;
-    }
 
     h2 {
         font-size: .85em;
@@ -185,13 +183,15 @@ a {
     
     .image-profile {
         float: right;
-        max-width: 40%;
+        width: 40%;
+        padding-right: 1em;
         margin-bottom: 2em;
+        clear: both;
     }
 
     .intro {
         /* display: inline-block; */
-        /* text-align: left; */
+        text-align: left;
         padding: 0 0 5em 1em;
     }
 
@@ -201,7 +201,7 @@ a {
 
     .p1,
     .p2 {
-    width: 46.5%;
+    max-width: 46.5%;
     }
 
     .p1 {
@@ -219,6 +219,7 @@ a {
     .con-text {
         display: inline-block;
         width: 70%;
+        text-align: center;
     }
 
     .main-footer {
