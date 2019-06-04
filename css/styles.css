@@ -82,7 +82,6 @@ a {
         .main-nav {
             padding: 0;
             margin: 0 auto;
-            /* width: 100%; */
         } 
 
             .main-nav a {
@@ -184,6 +183,10 @@ a {
             padding: .65em;
         }
 
+        .main-nav a {
+            border: 1px solid grey;
+        }
+
     /* Layout ---------- */
 
     .banner {
@@ -203,11 +206,6 @@ a {
             display: inline-block;
             width: 40%;
             float: right;
-            /* margin: 10px 0; */
-        }
-
-        .main-nav a {
-            border: 1px solid grey;
         }
 
     .card {
@@ -259,33 +257,36 @@ a {
             visibility: hidden;
         }
 
-            .footer-nav ul {
-                visibility: visible;
-                display: flex;
-                justify-content: flex-end;
-                position: absolute;
-                right: 30px;
-                margin: 0 auto;
-            }
+        .footer-nav {
+            visibility: visible;
+            float: right;
+        }
+
 
             .footer-nav li {
+                display: inline-block;
+                text-align: right;
                 padding: 7px 15px;
                 margin: auto;
             }
 
             .footer-nav a {
+                padding: .75em;
+                margin: .25em 0;
                 color: rgb(179, 127, 127)
             }
+
 }
 
 @media (min-width: 1025px) {
 
-    /* Navigation ----------- */
 
 body,
 footer {
     max-width: 1150px;
 }
+
+    /* Navigation ----------- */
 
 .main-header {
     padding: 2em 1.25em;
