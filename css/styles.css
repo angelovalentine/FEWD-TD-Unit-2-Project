@@ -138,11 +138,19 @@ a {
 
     .con-text {
         text-align: center;
+        line-height: 1.5;
     }
 
         .con-text p {
             width: 80%;
             margin: 0 auto;
+        }
+
+        .con-info {
+            line-height: 2;
+            font-size: 1.25em;
+            font-weight: 700;
+            padding-left: .75em;
         }
 
 .footer {
@@ -239,8 +247,8 @@ a {
                 }
 
                 .text {
-                    width: 60%;
-                    padding-bottom: 1em;
+                    width: 75%;
+                    /* padding-bottom: 1em; */
                 }
 
         .contact {
